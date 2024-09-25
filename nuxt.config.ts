@@ -6,8 +6,12 @@ export default defineNuxtConfig({
     head: {
       title: 'My Get Started Nuxt Application',
       titleTemplate: '%s | manuelluvuvamo.vercel.app',
-      link: [{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }]
-    }
+      link: [{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }],
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+    },
+    pageTransition: {name:'page', mode:'out-in'} ,
+    layoutTransition: { name: 'layout', mode: 'out-in' }
   },
   $development: {
     app: {
